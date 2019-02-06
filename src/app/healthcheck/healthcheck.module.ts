@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { HealthcheckRoutingModule } from './healthcheck-routing.module';
 import { HealthComponent } from './health/health.component';
 
+
 @NgModule({
   declarations: [HealthComponent],
   imports: [

@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {HttpClientModule} from '@angular/common/http';
 import {HealthcheckModule} from './healthcheck/healthcheck.module';
 @NgModule({
   declarations: [
@@ -10,6 +11,7 @@ import {HealthcheckModule} from './healthcheck/healthcheck.module';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     HealthcheckModule
   ],

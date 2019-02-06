@@ -1,3 +1,12 @@
 <p>
   health works!
+  
 </p>
+
+<p>Environment Selected :  {{env}}</p>
+<p><button (click)="getStatus('dev','')">Development Api Health Check </button></p>
+<p><button (click)="getStatus('prod','')">Production Api Health Check</button></p>
+
+<div *ngFor="let item of map | keyvalue">
+  <b>{{item.key}}</b>  <b>{{item.value}}</b>
+</div>
