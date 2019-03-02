@@ -22,7 +22,7 @@ export class HealthComponent implements OnInit {
 
   constructor(private healthService: HealthService, private urlService: UrlService) {
    
-      setInterval(() => {
+    setInterval(() => {
         if(this.env != ''){
           this.getStatus(this.env);
         }
@@ -30,6 +30,8 @@ export class HealthComponent implements OnInit {
 
 
   }
+
+
   /*
   */
   getStatus(env: string) {

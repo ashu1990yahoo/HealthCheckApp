@@ -14,8 +14,15 @@ export class HealthService {
 
   response: Map<string, any>;
 
+
   getStatus(path: string): Observable<any> {
-    return this.http.get(path);
+    const headers = new HttpHeaders();
+    headers.append('Content-Type', 'application/json')
+    headers.append('Access-Control-Allow-Headers', 'Content-Type')
+    headers.append('Access-Control-Allow-Methods', 'GET')
+    headers.append('Access-Control-Allow-Origin', '*');
+
+    return this.http.get(path,{headers});
 
   }
 

@@ -28,8 +28,8 @@ export class UrlService{
 
     public getDevUrlMap (env:string) {
         this.map = new Map<string,string>();
-        this.map.set('https://www.youtube.com/channels?part=contentDetails&mine=true','');
-        this.map.set('https://any-api.com/','');
+        this.map.set('https://www.youtube.com','');
+        this.map.set('https://any-api.com','');
         this.map.set('https://www.techiediaries.com','');
         this.map.set('https://www.google.co.in','');
         return this.map;
@@ -38,8 +38,8 @@ export class UrlService{
 
     public getprodUrlMap (env:string) {
         this.map = new Map<string,string>();
-        this.map.set('https://www.youtube.com/channels?part=contentDetails&mine=true','');
-        this.map.set('https://any-api.com/','');
+        this.map.set('https://www.youtube.com','');
+        this.map.set('https://any-api.com','');
         this.map.set('https://www.techiediaries.com','');
         this.map.set('https://www.google.co.in','');
         this.map.set('https://ng2.codecraft.tv','');
