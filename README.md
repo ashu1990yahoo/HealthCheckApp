@@ -29,3 +29,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 #Google Chrome with security disabled
 chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security
+
+#Notes:
+1.CORS Issue while get request to other websites:
+https://daveceddia.com/access-control-allow-origin-cors-errors-in-angular/
